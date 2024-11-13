@@ -26,17 +26,18 @@ class _ProjectsState extends State<Projects> {
   Widget build(BuildContext context) {
     if (MediaQuery.of(context).orientation == Orientation.landscape) {
       return Scaffold(
+          backgroundColor: theme[5],
           body: Container(
-        height: MediaQuery.of(context).size.height,
-        color: theme[5],
-        child: SingleChildScrollView(
-          child: Container(
-            constraints: BoxConstraints(minHeight: MediaQuery.of(context).size.height),
-            child: Column(
-              mainAxisAlignment: MainAxisAlignment.spaceBetween,
-              children: [
-                Column(
-                    children: [
+            height: MediaQuery.of(context).size.height,
+            color: theme[5],
+            child: SingleChildScrollView(
+              child: Container(
+                constraints: BoxConstraints(
+                    minHeight: MediaQuery.of(context).size.height),
+                child: Column(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  children: [
+                    Column(children: [
                       Header(),
                       Padding(
                         padding: const EdgeInsets.all(20.0),
@@ -83,13 +84,14 @@ class _ProjectsState extends State<Projects> {
                       ),
                     ]),
                     Footer()
-              ],
+                  ],
+                ),
+              ),
             ),
-          ),
-        ),
-      ));
+          ));
     } else {
       return Scaffold(
+          backgroundColor: theme[5],
           appBar: TopBar(),
           drawer: SideBar(),
           body: Container(

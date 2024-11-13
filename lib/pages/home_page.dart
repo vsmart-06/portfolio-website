@@ -49,119 +49,131 @@ class _HomeState extends State<Home> {
   Widget build(BuildContext context) {
     if (MediaQuery.of(context).orientation == Orientation.landscape) {
       return Scaffold(
+          backgroundColor: theme[5],
           body: Container(
-        height: MediaQuery.of(context).size.height,
-        color: theme[5],
-        child: SingleChildScrollView(
-          child: Container(
-            constraints: BoxConstraints(minHeight: MediaQuery.of(context).size.height),
-            child: Column(
-              mainAxisAlignment: MainAxisAlignment.spaceBetween,
-              children: [
-                Column(children: [
-                  Header(),
-                  Padding(
-                    padding: const EdgeInsets.all(20.0),
-                    child: Row(
-                      mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                      crossAxisAlignment: CrossAxisAlignment.start,
-                      children: [
-                        SizedBox(
-                          width: MediaQuery.of(context).size.width * 0.6,
-                          child: Column(
-                            crossAxisAlignment: CrossAxisAlignment.center,
-                            mainAxisAlignment: MainAxisAlignment.start,
-                            children: [
-                              Padding(
-                                  padding: const EdgeInsets.fromLTRB(0, 30, 0, 50),
-                                  child: AnimatedTextKit(
-                                    repeatForever: true,
-                                    pause: Duration(seconds: 3),
-                                    animatedTexts: [
-                                      TypewriterAnimatedText(
-                                        "print(\"Hi guys!\")",
-                                        cursor: "|",
-                                        speed: Duration(milliseconds: 100),
-                                        textStyle: TextStyle(
-                                            fontFamily: GoogleFonts.sourceCodePro()
-                                                .fontFamily,
-                                            fontSize: 40,
-                                            fontWeight: FontWeight.bold,
-                                            color: theme[1]),
-                                      ),
-                                      TypewriterAnimatedText(
-                                        "System.out.println(\"Hi guys!\");",
-                                        speed: Duration(milliseconds: 100),
-                                        cursor: "|",
-                                        textStyle: TextStyle(
-                                            fontFamily: GoogleFonts.sourceCodePro()
-                                                .fontFamily,
-                                            fontSize: 40,
-                                            fontWeight: FontWeight.bold,
-                                            color: theme[1]),
-                                      ),
-                                      TypewriterAnimatedText(
-                                        "print(\"Hi guys!\");",
-                                        speed: Duration(milliseconds: 100),
-                                        cursor: "|",
-                                        textStyle: TextStyle(
-                                            fontFamily: GoogleFonts.sourceCodePro()
-                                                .fontFamily,
-                                            fontSize: 40,
-                                            fontWeight: FontWeight.bold,
-                                            color: theme[1]),
-                                      ),
-                                      TypewriterAnimatedText(
-                                        "cout << \"Hi guys!\" << endl;",
-                                        speed: Duration(milliseconds: 100),
-                                        cursor: "|",
-                                        textStyle: TextStyle(
-                                            fontFamily: GoogleFonts.sourceCodePro()
-                                                .fontFamily,
-                                            fontSize: 40,
-                                            fontWeight: FontWeight.bold,
-                                            color: theme[1]),
-                                      ),
-                                    ],
-                                  )),
-                              SizedBox(
-                                width: MediaQuery.of(context).size.width * 0.5,
-                                child: Text(
-                                    "My name is Srivishnu Vusirikala, and I am a freshman studying Computer Science at the University of Illinois Urbana-Champaign. I am an avid lover of programming, mathematics, and chess, while I also enjoy playing sports such as cricket, basketball, and hockey. Buckle your seatbelts, as you get ready to navigate this tapestry that is my life!",
-                                    style: TextStyle(
-                                        fontFamily: GoogleFonts.jost().fontFamily,
-                                        fontSize: 30,
-                                        color: theme[0])),
-                              )
-                            ],
-                          ),
-                        ),
-                        Card(
-                          color: theme[3],
-                          child: Padding(
-                            padding: const EdgeInsets.all(20.0),
-                            child: ClipRRect(
-                              borderRadius: BorderRadius.all(Radius.circular(10)),
-                              child: Image(
-                                image: NetworkImage(
-                                    "https://i.imgur.com/nZuxMBB.jpeg"),
-                                width: MediaQuery.of(context).size.width * 0.25,
+            height: MediaQuery.of(context).size.height,
+            color: theme[5],
+            child: SingleChildScrollView(
+              child: Container(
+                constraints: BoxConstraints(
+                    minHeight: MediaQuery.of(context).size.height),
+                child: Column(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  children: [
+                    Column(children: [
+                      Header(),
+                      Padding(
+                        padding: const EdgeInsets.all(20.0),
+                        child: Row(
+                          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: [
+                            SizedBox(
+                              width: MediaQuery.of(context).size.width * 0.6,
+                              child: Column(
+                                crossAxisAlignment: CrossAxisAlignment.center,
+                                mainAxisAlignment: MainAxisAlignment.start,
+                                children: [
+                                  Padding(
+                                      padding: const EdgeInsets.fromLTRB(
+                                          0, 30, 0, 50),
+                                      child: AnimatedTextKit(
+                                        repeatForever: true,
+                                        pause: Duration(seconds: 3),
+                                        animatedTexts: [
+                                          TypewriterAnimatedText(
+                                            "print(\"Hi guys!\")",
+                                            cursor: "|",
+                                            speed: Duration(milliseconds: 100),
+                                            textStyle: TextStyle(
+                                                fontFamily:
+                                                    GoogleFonts.sourceCodePro()
+                                                        .fontFamily,
+                                                fontSize: 40,
+                                                fontWeight: FontWeight.bold,
+                                                color: theme[1]),
+                                          ),
+                                          TypewriterAnimatedText(
+                                            "System.out.println(\"Hi guys!\");",
+                                            speed: Duration(milliseconds: 100),
+                                            cursor: "|",
+                                            textStyle: TextStyle(
+                                                fontFamily:
+                                                    GoogleFonts.sourceCodePro()
+                                                        .fontFamily,
+                                                fontSize: 40,
+                                                fontWeight: FontWeight.bold,
+                                                color: theme[1]),
+                                          ),
+                                          TypewriterAnimatedText(
+                                            "print(\"Hi guys!\");",
+                                            speed: Duration(milliseconds: 100),
+                                            cursor: "|",
+                                            textStyle: TextStyle(
+                                                fontFamily:
+                                                    GoogleFonts.sourceCodePro()
+                                                        .fontFamily,
+                                                fontSize: 40,
+                                                fontWeight: FontWeight.bold,
+                                                color: theme[1]),
+                                          ),
+                                          TypewriterAnimatedText(
+                                            "cout << \"Hi guys!\" << endl;",
+                                            speed: Duration(milliseconds: 100),
+                                            cursor: "|",
+                                            textStyle: TextStyle(
+                                                fontFamily:
+                                                    GoogleFonts.sourceCodePro()
+                                                        .fontFamily,
+                                                fontSize: 40,
+                                                fontWeight: FontWeight.bold,
+                                                color: theme[1]),
+                                          ),
+                                        ],
+                                      )),
+                                  SizedBox(
+                                    width:
+                                        MediaQuery.of(context).size.width * 0.5,
+                                    child: Text(
+                                        "My name is Srivishnu Vusirikala, and I am a freshman studying Computer Science at the University of Illinois Urbana-Champaign. I am an avid lover of programming, mathematics, and chess, while I also enjoy playing sports such as cricket, basketball, and hockey. Buckle your seatbelts, as you get ready to navigate this tapestry that is my life!",
+                                        style: TextStyle(
+                                            fontFamily:
+                                                GoogleFonts.jost().fontFamily,
+                                            fontSize: 30,
+                                            color: theme[0])),
+                                  )
+                                ],
                               ),
                             ),
-                          ),
-                        )
-                      ],
-                    ),
-                  ),
-                ]),
-                Footer()
-              ],
+                            Card(
+                              color: theme[3],
+                              child: Padding(
+                                padding: const EdgeInsets.all(20.0),
+                                child: ClipRRect(
+                                  borderRadius:
+                                      BorderRadius.all(Radius.circular(10)),
+                                  child: Image(
+                                    image: NetworkImage(
+                                        "https://i.imgur.com/nZuxMBB.jpeg"),
+                                    width: MediaQuery.of(context).size.width *
+                                        0.25,
+                                  ),
+                                ),
+                              ),
+                            )
+                          ],
+                        ),
+                      ),
+                    ]),
+                    Footer()
+                  ],
+                ),
+              ),
             ),
-          ),
-        ),
-      ));
+          ));
     } else {
       return Scaffold(
+          backgroundColor: theme[5],
           appBar: TopBar(),
           drawer: SideBar(),
           body: Container(
@@ -186,8 +198,8 @@ class _HomeState extends State<Home> {
                                 cursor: "|",
                                 speed: Duration(milliseconds: 100),
                                 textStyle: TextStyle(
-                                    fontFamily: GoogleFonts.sourceCodePro()
-                                        .fontFamily,
+                                    fontFamily:
+                                        GoogleFonts.sourceCodePro().fontFamily,
                                     fontSize: 30,
                                     fontWeight: FontWeight.bold,
                                     color: theme[1]),
@@ -197,8 +209,8 @@ class _HomeState extends State<Home> {
                                 speed: Duration(milliseconds: 100),
                                 cursor: "|",
                                 textStyle: TextStyle(
-                                    fontFamily: GoogleFonts.sourceCodePro()
-                                        .fontFamily,
+                                    fontFamily:
+                                        GoogleFonts.sourceCodePro().fontFamily,
                                     fontSize: 30,
                                     fontWeight: FontWeight.bold,
                                     color: theme[1]),
@@ -208,8 +220,8 @@ class _HomeState extends State<Home> {
                                 speed: Duration(milliseconds: 100),
                                 cursor: "|",
                                 textStyle: TextStyle(
-                                    fontFamily: GoogleFonts.sourceCodePro()
-                                        .fontFamily,
+                                    fontFamily:
+                                        GoogleFonts.sourceCodePro().fontFamily,
                                     fontSize: 30,
                                     fontWeight: FontWeight.bold,
                                     color: theme[1]),
@@ -219,8 +231,8 @@ class _HomeState extends State<Home> {
                                 speed: Duration(milliseconds: 100),
                                 cursor: "|",
                                 textStyle: TextStyle(
-                                    fontFamily: GoogleFonts.sourceCodePro()
-                                        .fontFamily,
+                                    fontFamily:
+                                        GoogleFonts.sourceCodePro().fontFamily,
                                     fontSize: 30,
                                     fontWeight: FontWeight.bold,
                                     color: theme[1]),
@@ -245,8 +257,7 @@ class _HomeState extends State<Home> {
                               child: Image(
                                 image: NetworkImage(
                                     "https://i.imgur.com/nZuxMBB.jpeg"), //NetworkImage("https://i.imgur.com/nZuxMBB.jpeg"),
-                                width:
-                                    MediaQuery.of(context).size.width * 0.5,
+                                width: MediaQuery.of(context).size.width * 0.5,
                               ),
                             ),
                           ),

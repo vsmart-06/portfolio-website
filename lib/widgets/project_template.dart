@@ -45,9 +45,15 @@ class ProjectPage extends StatelessWidget {
               borderRadius: BorderRadius.all(Radius.circular(10)),
               child: Image(
                 image: NetworkImage(image),
-                height: landscape ? size.height * 0.3 : (fitWidth ? size.width * 0.8 : null),
-                width: landscape ? (fitWidth ? size.height * 0.3 : null) : size.width * 0.8,
-                fit: fitWidth ? BoxFit.cover : (landscape ? BoxFit.fitHeight : BoxFit.contain),
+                height: landscape
+                    ? size.height * 0.3
+                    : (fitWidth ? size.width * 0.8 : null),
+                width: landscape
+                    ? (fitWidth ? size.height * 0.3 : null)
+                    : size.width * 0.8,
+                fit: fitWidth
+                    ? BoxFit.cover
+                    : (landscape ? BoxFit.fitHeight : BoxFit.contain),
               ),
             ),
           ),
@@ -61,17 +67,18 @@ class ProjectPage extends StatelessWidget {
   Widget build(BuildContext context) {
     if (MediaQuery.of(context).orientation == Orientation.landscape) {
       return Scaffold(
+          backgroundColor: theme[5],
           body: Container(
-        height: MediaQuery.of(context).size.height,
-        color: theme[5],
-        child: SingleChildScrollView(
-          child: Container(
-            constraints: BoxConstraints(minHeight: MediaQuery.of(context).size.height),
-            child: Column(
-              mainAxisAlignment: MainAxisAlignment.spaceBetween,
-              children: [
-                Column(
-                    children: [
+            height: MediaQuery.of(context).size.height,
+            color: theme[5],
+            child: SingleChildScrollView(
+              child: Container(
+                constraints: BoxConstraints(
+                    minHeight: MediaQuery.of(context).size.height),
+                child: Column(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  children: [
+                    Column(children: [
                       Header(),
                       Column(
                         children: [
@@ -104,7 +111,8 @@ class ProjectPage extends StatelessWidget {
                                   link,
                                   style: TextStyle(
                                       color: theme[3],
-                                      fontFamily: GoogleFonts.montserrat().fontFamily,
+                                      fontFamily:
+                                          GoogleFonts.montserrat().fontFamily,
                                       fontSize: 30),
                                   textAlign: TextAlign.center,
                                 ),
@@ -135,20 +143,21 @@ class ProjectPage extends StatelessWidget {
                           padding: const EdgeInsets.all(20.0),
                           child: Row(
                             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                            children:
-                                generateImages(MediaQuery.of(context).size, true),
+                            children: generateImages(
+                                MediaQuery.of(context).size, true),
                           ),
                         ),
                       ),
                     ]),
                     Footer()
-              ],
+                  ],
+                ),
+              ),
             ),
-          ),
-        ),
-      ));
+          ));
     } else {
       return Scaffold(
+          backgroundColor: theme[5],
           appBar: TopBar(),
           drawer: SideBar(),
           body: Container(
