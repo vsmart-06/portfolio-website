@@ -92,10 +92,10 @@ class _ProjectsState extends State<Projects> {
       return Scaffold(
           appBar: TopBar(),
           drawer: SideBar(),
-          body: SingleChildScrollView(
-            child: Container(
-              width: MediaQuery.of(context).size.width,
-              color: theme[5],
+          body: Container(
+            width: MediaQuery.of(context).size.width,
+            color: theme[5],
+            child: SingleChildScrollView(
               child: Padding(
                 padding: const EdgeInsets.only(bottom: 20),
                 child: Column(children: [
