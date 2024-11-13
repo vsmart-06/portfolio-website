@@ -41,6 +41,7 @@ class _OrganizationsState extends State<Organizations> {
                       Header(),
                       Row(
                         mainAxisAlignment: MainAxisAlignment.center,
+                        crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
                           ItemCard(
                             heading: "Software Intern",
@@ -55,9 +56,9 @@ class _OrganizationsState extends State<Organizations> {
                             organization: "STEMist Education",
                           ),
                           ItemCard(
-                            heading: "Project: Code",
+                            heading: "Head of Technology for EHR",
                             subHeading:
-                                "- Developed an application to collate electronic health data of patients\n- Worked in a team of 10 to develop a mobile application to display radiology reports, blood tests, etc.",
+                                "- Developed a full-stack cross-platform health locker application\n- Leveraged the Indian Government's Unified Health Interface to connect with national health care providers\n- Led a team of 10 to develop a mobile application to display radiology reports, blood tests, etc.",
                             organization:
                                 "University of Illinois Urbana-Champaign",
                           ),
@@ -65,6 +66,7 @@ class _OrganizationsState extends State<Organizations> {
                       ),
                       Row(
                         mainAxisAlignment: MainAxisAlignment.center,
+                        crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
                           ItemCard(
                             heading: "Math Club President",
@@ -73,13 +75,13 @@ class _OrganizationsState extends State<Organizations> {
                             organization: "Greenwood High International School",
                           ),
                           ItemCard(
-                            heading: "Head Of Technology",
+                            heading: "Head of Technology for IGNITE 2023",
                             subHeading:
                                 "- Developed the website for IGNITE 2023 (annual inter-school cultural fest) with 1300+ participants\n- Led a team of 4 to develop the website within 2 months\n- Coordinated with departments to get specific requirements",
                             organization: "Greenwood High International School",
                           ),
                           ItemCard(
-                            heading: "Undersecretary General Of Technology",
+                            heading: "Undersecretary General of Technology for GWHMUN 2023",
                             subHeading:
                                 "- Built the website for GWHMUN 2023, the largest inter-school MUN in Bangalore\n- Led a team of 4 to develop the website\n- Coordinated with school departments and organizing committee to get specific requirements",
                             organization: "Greenwood High International School",
@@ -88,9 +90,10 @@ class _OrganizationsState extends State<Organizations> {
                       ),
                       Row(
                         mainAxisAlignment: MainAxisAlignment.center,
+                        crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
                           ItemCard(
-                            heading: "Co-founder Of Excel Core Robotics",
+                            heading: "Co-founder of Excel Core Robotics",
                             subHeading:
                                 "- Created a lesson to help students program and build robots\n- Taught motor control, sensing, and team building skills\n- Capstone project: robotic floor sweeper",
                             organization: "Excel Core Robotics",
@@ -135,9 +138,9 @@ class _OrganizationsState extends State<Organizations> {
                     organization: "STEMist Education",
                   ),
                   ItemCard(
-                    heading: "Project: Code",
+                    heading: "Head of Technology for EHR",
                     subHeading:
-                        "- Developed an application to collate electronic health data of patients\n- Worked in a team of 10 to develop a mobile application to display radiology reports, blood tests, etc.",
+                        "- Developed a full-stack cross-platform health locker application\n- Leveraged the Indian Government's Unified Health Interface to connect with national health care providers\n- Led a team of 10 to develop a mobile application to display radiology reports, blood tests, etc.",
                     organization: "University of Illinois Urbana-Champaign",
                   ),
                   ItemCard(
@@ -147,19 +150,19 @@ class _OrganizationsState extends State<Organizations> {
                     organization: "Greenwood High International School",
                   ),
                   ItemCard(
-                    heading: "Head Of Technology",
+                    heading: "Head of Technology for IGNITE 2023",
                     subHeading:
                         "- Developed the website for IGNITE 2023 (annual inter-school cultural fest) with 1300+ participants\n- Led a team of 4 to develop the website within 2 months\n- Coordinated with departments to get specific requirements",
                     organization: "Greenwood High International School",
                   ),
                   ItemCard(
-                    heading: "Undersecretary General Of Technology",
+                    heading: "Undersecretary General of Technology for GWHMUN 2023",
                     subHeading:
                         "- Built the website for GWHMUN 2023, the largest inter-school MUN in Bangalore\n- Led a team of 4 to develop the website\n- Coordinated with school departments and organizing committee to get specific requirements",
                     organization: "Greenwood High International School",
                   ),
                   ItemCard(
-                    heading: "Co-founder Of Excel Core Robotics",
+                    heading: "Co-founder of Excel Core Robotics",
                     subHeading:
                         "- Created a lesson to help students program and build robots\n- Taught motor control, sensing, and team building skills\n- Capstone project: robotic floor sweeper",
                     organization: "Excel Core Robotics",

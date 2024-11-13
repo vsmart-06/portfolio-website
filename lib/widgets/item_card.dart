@@ -62,11 +62,13 @@ class _ItemCardState extends State<ItemCard>
               onEnter: (event) => hoverAnimation(true),
               onHover: (event) => hoverAnimation(true),
               onExit: (event) => hoverAnimation(false),
-              child: SizedBox(
+              child: Container(
                   width: MediaQuery.of(context).size.width * 0.25,
-                  height: widget.organization == null
+                  constraints: BoxConstraints(
+                    minHeight: widget.organization == null
                       ? MediaQuery.of(context).size.height * 0.6
-                      : MediaQuery.of(context).size.height * 0.7,
+                      : MediaQuery.of(context).size.height * 0.8,
+                  ),
                   child: Padding(
                       padding: const EdgeInsets.all(10.0),
                       child: Card(
@@ -129,10 +131,7 @@ class _ItemCardState extends State<ItemCard>
                 hoverAnimation(press);
               }),
               child: SizedBox(
-                width: MediaQuery.of(context).size.width *
-                    (MediaQuery.of(context).orientation == Orientation.landscape
-                        ? 0.25
-                        : 0.75),
+                width: MediaQuery.of(context).size.width * 0.75,
                 child: Padding(
                   padding: const EdgeInsets.all(10.0),
                   child: Card(

@@ -41,6 +41,7 @@ class _AchievementsState extends State<Achievements> {
                       Header(),
                       Row(
                         mainAxisAlignment: MainAxisAlignment.center,
+                        crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
                           ItemCard(
                               heading: "Intuit Scholarship Program Winner",
@@ -59,6 +60,7 @@ class _AchievementsState extends State<Achievements> {
                       ),
                       Row(
                           mainAxisAlignment: MainAxisAlignment.center,
+                          crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
                             ItemCard(
                               heading:
@@ -79,6 +81,7 @@ class _AchievementsState extends State<Achievements> {
                           ]),
                       Row(
                           mainAxisAlignment: MainAxisAlignment.center,
+                          crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
                             ItemCard(
                               heading:
