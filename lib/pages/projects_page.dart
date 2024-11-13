@@ -26,60 +26,65 @@ class _ProjectsState extends State<Projects> {
   Widget build(BuildContext context) {
     if (MediaQuery.of(context).orientation == Orientation.landscape) {
       return Scaffold(
-          body: SingleChildScrollView(
-        child: Container(
-          height: MediaQuery.of(context).size.height,
-          color: theme[5],
-          child: SingleChildScrollView(
+          body: Container(
+        height: MediaQuery.of(context).size.height,
+        color: theme[5],
+        child: SingleChildScrollView(
+          child: Container(
+            constraints: BoxConstraints(minHeight: MediaQuery.of(context).size.height),
             child: Column(
-                mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                children: [
-                  Header(),
-                  Padding(
-                    padding: const EdgeInsets.all(20.0),
-                    child: Column(
-                      children: [
-                        Row(
-                          mainAxisAlignment: MainAxisAlignment.center,
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              children: [
+                Column(
+                    children: [
+                      Header(),
+                      Padding(
+                        padding: const EdgeInsets.all(20.0),
+                        child: Column(
                           children: [
-                            Project(
-                              name:
-                                  "Machine Learning Research on Self-Supervision",
-                              subtitle:
-                                  "Researched the impact of self-supervision on improving the accuracy of neural networks training to classify melanoma patches",
-                              navPath: "/melanoma-classification",
+                            Row(
+                              mainAxisAlignment: MainAxisAlignment.center,
+                              children: [
+                                Project(
+                                  name:
+                                      "Machine Learning Research on Self-Supervision",
+                                  subtitle:
+                                      "Researched the impact of self-supervision on improving the accuracy of neural networks training to classify melanoma patches",
+                                  navPath: "/melanoma-classification",
+                                ),
+                                Project(
+                                  name:
+                                      "Math Research on Solving Depressed Polynomial Equations",
+                                  subtitle:
+                                      "Researched a novel approach to formulate closed solutions for special cases of depressed polynomial equations",
+                                  navPath: "/solving-depressed-polynomials",
+                                ),
+                                Project(
+                                  name: "Oral Cancer Detection Application",
+                                  subtitle:
+                                      "Harnessed machine learning to detect oral cancer tumors",
+                                  navPath: "/oral-cancer-detection",
+                                ),
+                              ],
                             ),
-                            Project(
-                              name:
-                                  "Math Research on Solving Depressed Polynomial Equations",
-                              subtitle:
-                                  "Researched a novel approach to formulate closed solutions for special cases of depressed polynomial equations",
-                              navPath: "/solving-depressed-polynomials",
-                            ),
-                            Project(
-                              name: "Oral Cancer Detection Application",
-                              subtitle:
-                                  "Harnessed machine learning to detect oral cancer tumors",
-                              navPath: "/oral-cancer-detection",
+                            Row(
+                              mainAxisAlignment: MainAxisAlignment.center,
+                              children: [
+                                Project(
+                                  name: "Minesweeper Bot",
+                                  subtitle:
+                                      "Created a Discord bot that brought a variety of classic board games to the platform",
+                                  navPath: "/minesweeper-bot",
+                                )
+                              ],
                             ),
                           ],
                         ),
-                        Row(
-                          mainAxisAlignment: MainAxisAlignment.center,
-                          children: [
-                            Project(
-                              name: "Minesweeper Bot",
-                              subtitle:
-                                  "Created a Discord bot that brought a variety of classic board games to the platform",
-                              navPath: "/minesweeper-bot",
-                            )
-                          ],
-                        ),
-                      ],
-                    ),
-                  ),
-                  Footer()
-                ]),
+                      ),
+                    ]),
+                    Footer()
+              ],
+            ),
           ),
         ),
       ));
