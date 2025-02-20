@@ -77,16 +77,16 @@ class _ItemCardState extends State<ItemCard>
                               borderRadius: BorderRadius.circular(10),
                               side: BorderSide(color: colorAnimation.value)),
                           child: Padding(
-                            padding: const EdgeInsets.all(10.0),
+                            padding: const EdgeInsets.fromLTRB(25, 20, 25, 10),
                             child: Column(
                               crossAxisAlignment: CrossAxisAlignment.center,
-                              mainAxisAlignment: MainAxisAlignment.center,
+                              mainAxisAlignment: MainAxisAlignment.start,
                               children: [
                                 Text(
                                   widget.heading,
                                   style: TextStyle(
                                     fontSize: 30,
-                                    color: theme[0],
+                                    color: theme[2],
                                     fontWeight: FontWeight.bold,
                                     fontFamily: font,
                                   ),
@@ -113,8 +113,7 @@ class _ItemCardState extends State<ItemCard>
                                     widget.subHeading,
                                     style: TextStyle(
                                         fontSize: 20,
-                                        color: theme[2],
-                                        fontStyle: FontStyle.italic,
+                                        color: theme[0],
                                         fontFamily: font),
                                     textAlign: widget.organization == null
                                         ? TextAlign.center
@@ -131,16 +130,16 @@ class _ItemCardState extends State<ItemCard>
                 hoverAnimation(press);
               }),
               child: SizedBox(
-                width: MediaQuery.of(context).size.width * 0.75,
+                width: MediaQuery.of(context).size.width * 0.9,
                 child: Padding(
-                  padding: const EdgeInsets.all(10.0),
+                  padding: const EdgeInsets.fromLTRB(5, 10, 5, 10),
                   child: Card(
                     color: theme[5],
                     shape: RoundedRectangleBorder(
                         borderRadius: BorderRadius.circular(10),
                         side: BorderSide(color: colorAnimation.value)),
                     child: Padding(
-                      padding: const EdgeInsets.fromLTRB(10, 20, 10, 20),
+                      padding: const EdgeInsets.fromLTRB(25, 25, 25, 25),
                       child: Column(
                         crossAxisAlignment: CrossAxisAlignment.center,
                         mainAxisAlignment: MainAxisAlignment.center,
@@ -149,7 +148,7 @@ class _ItemCardState extends State<ItemCard>
                             widget.heading,
                             style: TextStyle(
                               fontSize: 30,
-                              color: theme[0],
+                              color: theme[2],
                               fontWeight: FontWeight.bold,
                               fontFamily: font,
                             ),
@@ -176,8 +175,7 @@ class _ItemCardState extends State<ItemCard>
                               widget.subHeading,
                               style: TextStyle(
                                   fontSize: 20,
-                                  color: theme[2],
-                                  fontStyle: FontStyle.italic,
+                                  color: theme[0],
                                   fontFamily: font),
                               textAlign: widget.organization == null
                                   ? TextAlign.center
