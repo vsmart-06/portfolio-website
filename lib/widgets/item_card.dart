@@ -66,8 +66,8 @@ class _ItemCardState extends State<ItemCard>
                   width: MediaQuery.of(context).size.width * 0.25,
                   constraints: BoxConstraints(
                     minHeight: widget.organization == null
-                      ? MediaQuery.of(context).size.height * 0.6
-                      : MediaQuery.of(context).size.height * 0.8,
+                      ? MediaQuery.of(context).size.height * 0.4
+                      : MediaQuery.of(context).size.height * 0.6,
                   ),
                   child: Padding(
                       padding: const EdgeInsets.all(10.0),
@@ -80,12 +80,12 @@ class _ItemCardState extends State<ItemCard>
                             padding: const EdgeInsets.fromLTRB(25, 20, 25, 10),
                             child: Column(
                               crossAxisAlignment: CrossAxisAlignment.center,
-                              mainAxisAlignment: MainAxisAlignment.start,
+                              mainAxisAlignment: (widget.organization != null) ? MainAxisAlignment.start : MainAxisAlignment.center,
                               children: [
                                 Text(
                                   widget.heading,
                                   style: TextStyle(
-                                    fontSize: 30,
+                                    fontSize: 24,
                                     color: theme[2],
                                     fontWeight: FontWeight.bold,
                                     fontFamily: font,
@@ -98,7 +98,7 @@ class _ItemCardState extends State<ItemCard>
                                         child: Text(
                                           widget.organization!,
                                           style: TextStyle(
-                                            fontSize: 25,
+                                            fontSize: 20,
                                             color: theme[3],
                                             fontStyle: FontStyle.italic,
                                             fontFamily: font,
@@ -112,7 +112,7 @@ class _ItemCardState extends State<ItemCard>
                                   child: Text(
                                     widget.subHeading,
                                     style: TextStyle(
-                                        fontSize: 20,
+                                        fontSize: 16,
                                         color: theme[0],
                                         fontFamily: font),
                                     textAlign: widget.organization == null
@@ -147,7 +147,7 @@ class _ItemCardState extends State<ItemCard>
                           Text(
                             widget.heading,
                             style: TextStyle(
-                              fontSize: 30,
+                              fontSize: 24,
                               color: theme[2],
                               fontWeight: FontWeight.bold,
                               fontFamily: font,
@@ -160,7 +160,7 @@ class _ItemCardState extends State<ItemCard>
                                   child: Text(
                                     widget.organization!,
                                     style: TextStyle(
-                                      fontSize: 25,
+                                      fontSize: 20,
                                       color: theme[3],
                                       fontStyle: FontStyle.italic,
                                       fontFamily: font,
@@ -174,7 +174,7 @@ class _ItemCardState extends State<ItemCard>
                             child: Text(
                               widget.subHeading,
                               style: TextStyle(
-                                  fontSize: 20,
+                                  fontSize: 16,
                                   color: theme[0],
                                   fontFamily: font),
                               textAlign: widget.organization == null

@@ -40,9 +40,9 @@ class _ProjectState extends State<Project> {
             Text(
               widget.name,
               style: TextStyle(
-                color: theme[0],
+                color: theme[2],
                 fontFamily: GoogleFonts.jost().fontFamily,
-                fontSize: 30,
+                fontSize: 24,
               ),
               textAlign: TextAlign.center,
             ),
@@ -51,9 +51,9 @@ class _ProjectState extends State<Project> {
               child: Text(
                 widget.subtitle,
                 style: TextStyle(
-                    color: theme[2],
+                    color: theme[0],
                     fontFamily: GoogleFonts.jost().fontFamily,
-                    fontSize: 20,
+                    fontSize: 16,
                     fontStyle: FontStyle.italic),
                 textAlign: TextAlign.center,
               ),
@@ -74,9 +74,7 @@ class _ProjectState extends State<Project> {
                   (MediaQuery.of(context).orientation == Orientation.landscape
                       ? 0.25
                       : 0.75),
-              MediaQuery.of(context).size.height * (MediaQuery.of(context).orientation == Orientation.landscape
-                      ? 0.4
-                      : 0.5))),
+              MediaQuery.of(context).size.height * 0.4)),
           backgroundColor: WidgetStateProperty.all(color),
           shape: WidgetStateProperty.all(RoundedRectangleBorder(
               side: BorderSide(color: theme[0]),
