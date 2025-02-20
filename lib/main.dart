@@ -43,8 +43,8 @@ The trained model returned an accuracy of around 80% on images that it had never
             link: "https://tinyurl.com/oral-cancer-app-presentation",
             dates: "October 2022 - July 2023",
             images: [
-              "https://i.imgur.com/ZSa6sf9.jpeg",
-              "https://i.imgur.com/j8Ig0ji.png"
+              "https://i.imgur.com/ra3qP26.jpeg",
+              "https://i.imgur.com/wacCjru.jpeg"
             ],
           ),
       "/minesweeper-bot": (context) => ProjectPage(

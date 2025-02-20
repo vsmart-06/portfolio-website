@@ -44,6 +44,31 @@ class _OrganizationsState extends State<Organizations> {
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
                           ItemCard(
+                            heading: "Research Assistant at RoboTouch Lab",
+                            subHeading:
+                                "- Contributed to the development of the simulation toolbox for the GelSight Tactile Sensors\n- Developed a custom rendering environment using Qt in C++ to simulate the function of the GelSight sensors",
+                            organization: "University of Illinois Urbana-Champaign",
+                          ),
+                          ItemCard(
+                            heading: "Research Assistant at McKechnie LIFE Home",
+                            subHeading:
+                                "- Programmed a pair of spectacles that could control the Stretch Robot using head movements\n- Integrated the GPT-3.5 model into the Misty Robot, enabling it to communicate with other robots in the lab",
+                            organization:
+                                "University of Illinois Urbana-Champaign",
+                          ),
+                          ItemCard(
+                            heading: "Course Assistant for CS 128",
+                            subHeading:
+                                "- Managed office hours and discussion sessions for 1000+ students at the University of Illinois\n- Validated the machine problems used to test the programming proficiency of the students throughout the semester",
+                            organization: "University of Illinois Urbana-Champaign",
+                          ),
+                        ],
+                      ),
+                      Row(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          ItemCard(
                             heading: "Software Intern",
                             subHeading:
                                 "- Developed REST API using JIRA platform to track issues & tickets in the organization to speed up workflow\n- Built API with Flask in Python",
@@ -125,6 +150,25 @@ class _OrganizationsState extends State<Organizations> {
               child: Padding(
                 padding: const EdgeInsets.only(bottom: 20),
                 child: Column(children: [
+                  ItemCard(
+                    heading: "Research Assistant at RoboTouch Lab",
+                    subHeading:
+                        "- Contributed to the development of the simulation toolbox for the GelSight Tactile Sensors\n- Developed a custom rendering environment using Qt in C++ to simulate the function of the GelSight sensors",
+                    organization: "University of Illinois Urbana-Champaign",
+                  ),
+                  ItemCard(
+                    heading: "Research Assistant at McKechnie LIFE Home",
+                    subHeading:
+                        "- Programmed a pair of spectacles that could control the Stretch Robot using head movements\n- Integrated the GPT-3.5 model into the Misty Robot, enabling it to communicate with other robots in the lab",
+                    organization:
+                        "University of Illinois Urbana-Champaign",
+                  ),
+                  ItemCard(
+                    heading: "Course Assistant for CS 128",
+                    subHeading:
+                        "- Managed office hours and discussion sessions for 1000+ students at the University of Illinois\n- Validated the machine problems used to test the programming proficiency of the students throughout the semester",
+                    organization: "University of Illinois Urbana-Champaign",
+                  ),
                   ItemCard(
                     heading: "Software Intern",
                     subHeading:
