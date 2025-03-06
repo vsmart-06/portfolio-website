@@ -135,11 +135,11 @@ class _HomeState extends State<Home> {
                                     width:
                                         MediaQuery.of(context).size.width * 0.5,
                                     child: Text(
-                                        "My name is Srivishnu Vusirikala, and I am a freshman studying Computer Science at the University of Illinois Urbana-Champaign. I am an avid lover of programming, mathematics, and chess, while I also enjoy playing sports such as cricket, basketball, and hockey. Buckle your seatbelts, as you get ready to navigate this tapestry that is my life!",
+                                        "My name is Srivishnu Vusirikala, and I am a freshman studying Computer Science at the University of Illinois Urbana-Champaign. I enjoy solving challenging problems in fields such as mathematics and computer science. I am also an avid lover chess and also sports such as cricket, basketball, and hockey. Buckle your seatbelts, as you get ready to navigate this tapestry that is my life!",
                                         style: TextStyle(
                                             fontFamily:
                                                 GoogleFonts.jost().fontFamily,
-                                            fontSize: 30,
+                                            fontSize: 25,
                                             color: theme[0])),
                                   )
                                 ],
@@ -156,7 +156,7 @@ class _HomeState extends State<Home> {
                                     image: NetworkImage(
                                         "https://i.imgur.com/nZuxMBB.jpeg"),
                                     width: MediaQuery.of(context).size.width *
-                                        0.25,
+                                        0.2,
                                   ),
                                 ),
                               ),
@@ -240,10 +240,10 @@ class _HomeState extends State<Home> {
                             ],
                           )),
                       Text(
-                          "My name is Srivishnu Vusirikala, and I am a freshman studying Computer Science at the University of Illinois Urbana-Champaign. I am an avid lover of programming, mathematics, and chess, while I also enjoy playing sports such as cricket, basketball, and hockey. Buckle your seatbelts, as you get ready to navigate this tapestry that is my life!",
+                          "My name is Srivishnu Vusirikala, and I am a freshman studying Computer Science at the University of Illinois Urbana-Champaign. I enjoy solving challenging problems in fields such as mathematics and computer science. I am also an avid lover chess and also sports such as cricket, basketball, and hockey. Buckle your seatbelts, as you get ready to navigate this tapestry that is my life!",
                           style: TextStyle(
                               fontFamily: GoogleFonts.jost().fontFamily,
-                              fontSize: 30,
+                              fontSize: 25,
                               color: theme[0])),
                       Padding(
                         padding: const EdgeInsets.fromLTRB(0, 20, 0, 20),
