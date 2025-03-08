@@ -42,6 +42,7 @@ class _ProjectState extends State<Project> {
               style: TextStyle(
                 color: theme[2],
                 fontFamily: GoogleFonts.jost().fontFamily,
+                fontWeight: FontWeight.bold,
                 fontSize: 24,
               ),
               textAlign: TextAlign.center,
