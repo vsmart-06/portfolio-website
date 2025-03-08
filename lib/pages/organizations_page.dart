@@ -46,13 +46,13 @@ class _OrganizationsState extends State<Organizations> {
                           ItemCard(
                             heading: "Research Assistant at RoboTouch Lab",
                             subHeading:
-                                "- Contributed to the development of the simulation toolbox for the GelSight Tactile Sensors\n- Developed a custom rendering environment using Qt in C++ to simulate the function of the GelSight sensors",
+                                "- Contributed to the development of the simulation toolbox for the GelSight Tactile Sensors\n- Developed a Python plugin for a custom rendering environment in Blender to simulate the function of the sensors",
                             organization: "University of Illinois Urbana-Champaign",
                           ),
                           ItemCard(
                             heading: "Research Assistant at McKechnie LIFE Home",
                             subHeading:
-                                "- Programmed a pair of spectacles that could control the Stretch Robot using head movements\n- Integrated the GPT-3.5 model into the Misty Robot, enabling it to communicate with other robots in the lab",
+                                "- Integrated the GPT-3.5 model into the Misty Robot, enabling it to communicate with other robots in the lab\n- Programmed the Misty Robot to give a fully automated and detailed tour of the LIFE Home to visitors",
                             organization:
                                 "University of Illinois Urbana-Champaign",
                           ),

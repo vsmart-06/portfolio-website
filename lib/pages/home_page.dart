@@ -135,7 +135,7 @@ class _HomeState extends State<Home> {
                                     width:
                                         MediaQuery.of(context).size.width * 0.5,
                                     child: Text(
-                                        "My name is Srivishnu Vusirikala, and I am a freshman studying Computer Science at the University of Illinois Urbana-Champaign. I enjoy solving challenging problems in fields such as mathematics and computer science. I am also an avid lover chess and also sports such as cricket, basketball, and hockey. Buckle your seatbelts, as you get ready to navigate this tapestry that is my life!",
+                                        "My name is Srivishnu Vusirikala, and I am a freshman studying Computer Science at the University of Illinois Urbana-Champaign. I enjoy solving challenging problems in fields such as mathematics and computer science. I am also an avid lover of chess and sports such as cricket, basketball, and hockey. Buckle your seatbelts, as you get ready to navigate this tapestry that is my life!",
                                         style: TextStyle(
                                             fontFamily:
                                                 GoogleFonts.jost().fontFamily,
@@ -240,7 +240,7 @@ class _HomeState extends State<Home> {
                             ],
                           )),
                       Text(
-                          "My name is Srivishnu Vusirikala, and I am a freshman studying Computer Science at the University of Illinois Urbana-Champaign. I enjoy solving challenging problems in fields such as mathematics and computer science. I am also an avid lover chess and also sports such as cricket, basketball, and hockey. Buckle your seatbelts, as you get ready to navigate this tapestry that is my life!",
+                          "My name is Srivishnu Vusirikala, and I am a freshman studying Computer Science at the University of Illinois Urbana-Champaign. I enjoy solving challenging problems in fields such as mathematics and computer science. I am also an avid lover of chess and sports such as cricket, basketball, and hockey. Buckle your seatbelts, as you get ready to navigate this tapestry that is my life!",
                           style: TextStyle(
                               fontFamily: GoogleFonts.jost().fontFamily,
                               fontSize: 25,
