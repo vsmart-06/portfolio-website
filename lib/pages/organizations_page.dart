@@ -44,12 +44,6 @@ class _OrganizationsState extends State<Organizations> {
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
                           ItemCard(
-                            heading: "Research Assistant at RoboTouch Lab",
-                            subHeading:
-                                "- Contributed to the development of the simulation toolbox for the GelSight Tactile Sensors\n- Developed a Python plugin for a custom rendering environment in Blender to simulate the function of the sensors",
-                            organization: "University of Illinois Urbana-Champaign",
-                          ),
-                          ItemCard(
                             heading: "Research Assistant at McKechnie LIFE Home",
                             subHeading:
                                 "- Integrated the GPT-3.5 model into the Misty Robot, enabling it to communicate with other robots in the lab\n- Programmed the Misty Robot to give a fully automated and detailed tour of the LIFE Home to visitors",
@@ -62,6 +56,12 @@ class _OrganizationsState extends State<Organizations> {
                                 "- Managed office hours and discussion sessions for 1000+ students at the University of Illinois\n- Validated the machine problems used to test the programming proficiency of the students throughout the semester",
                             organization: "University of Illinois Urbana-Champaign",
                           ),
+                          ItemCard(
+                            heading: "Mobile App Developer",
+                            subHeading:
+                                "- Developed a mobile application using Flutter to help 40000+ parents navigate the campus during Dads Weekend\n- Integrated with Google Maps and FEVO to create a seamless experience for navigation and ticket purchasing",
+                            organization: "Illini Dads Association",
+                          ),
                         ],
                       ),
                       Row(
@@ -69,16 +69,16 @@ class _OrganizationsState extends State<Organizations> {
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
                           ItemCard(
+                            heading: "Research Assistant at RoboTouch Lab",
+                            subHeading:
+                                "- Contributed to the development of the simulation toolbox for the GelSight Tactile Sensors\n- Developed a Python plugin for a custom rendering environment in Blender to simulate the function of the sensors",
+                            organization: "University of Illinois Urbana-Champaign",
+                          ),
+                          ItemCard(
                             heading: "Software Intern",
                             subHeading:
                                 "- Developed REST API using JIRA platform to track issues & tickets in the organization to speed up workflow\n- Built API with Flask in Python",
                             organization: "Labra.io",
-                          ),
-                          ItemCard(
-                            heading: "Senior Bot Developer",
-                            subHeading:
-                                "- Developed STEMMie bot to manage organization Discord server\n- Implemented features like task management, on/off boarding members, reminders, attendance, etc.\n- Used Python and the Discord API",
-                            organization: "STEMist Education",
                           ),
                           ItemCard(
                             heading: "Head of Technology for EHR",
@@ -94,10 +94,10 @@ class _OrganizationsState extends State<Organizations> {
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
                           ItemCard(
-                            heading: "President of the Math Club",
+                            heading: "Senior Bot Developer",
                             subHeading:
-                                "- Led club of 10 members through weekly-problem solving sessions on advanced math concepts\n- Hosted annual quiz competitions and published a biannual school math magazine\n- Organized annual Pi Day events (quiz, treasure hunt, integration bee) for a community of 600 high school students",
-                            organization: "Greenwood High International School",
+                                "- Developed STEMMie bot to manage organization Discord server\n- Implemented features like task management, on/off boarding members, reminders, attendance, etc.\n- Used Python and the Discord API",
+                            organization: "STEMist Education",
                           ),
                           ItemCard(
                             heading: "Head of Technology for IGNITE 2023",
@@ -117,6 +117,12 @@ class _OrganizationsState extends State<Organizations> {
                         mainAxisAlignment: MainAxisAlignment.center,
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
+                          ItemCard(
+                            heading: "President of the Math Club",
+                            subHeading:
+                                "- Led club of 10 members through weekly-problem solving sessions on advanced math concepts\n- Hosted annual quiz competitions and published a biannual school math magazine\n- Organized annual Pi Day events (quiz, treasure hunt, integration bee) for a community of 600 high school students",
+                            organization: "Greenwood High International School",
+                          ),
                           ItemCard(
                             heading: "Co-founder of Excel Core Robotics",
                             subHeading:
@@ -151,12 +157,6 @@ class _OrganizationsState extends State<Organizations> {
                 padding: const EdgeInsets.only(bottom: 20),
                 child: Column(children: [
                   ItemCard(
-                    heading: "Research Assistant at RoboTouch Lab",
-                    subHeading:
-                        "- Contributed to the development of the simulation toolbox for the GelSight Tactile Sensors\n- Developed a Python plugin for a custom rendering environment in Blender to simulate the function of the sensors",
-                    organization: "University of Illinois Urbana-Champaign",
-                  ),
-                  ItemCard(
                     heading: "Research Assistant at McKechnie LIFE Home",
                     subHeading:
                         "- Integrated the GPT-3.5 model into the Misty Robot, enabling it to communicate with other robots in the lab\n- Programmed the Misty Robot to give a fully automated and detailed tour of the LIFE Home to visitors",
@@ -170,16 +170,22 @@ class _OrganizationsState extends State<Organizations> {
                     organization: "University of Illinois Urbana-Champaign",
                   ),
                   ItemCard(
+                    heading: "Mobile App Developer",
+                    subHeading:
+                        "- Developed a mobile application using Flutter to help 40000+ parents navigate the campus during Dads Weekend\n- Integrated with Google Maps and FEVO to create a seamless experience for navigation and ticket purchasing",
+                    organization: "Illini Dads Association",
+                  ),
+                  ItemCard(
+                    heading: "Research Assistant at RoboTouch Lab",
+                    subHeading:
+                        "- Contributed to the development of the simulation toolbox for the GelSight Tactile Sensors\n- Developed a Python plugin for a custom rendering environment in Blender to simulate the function of the sensors",
+                    organization: "University of Illinois Urbana-Champaign",
+                  ),
+                  ItemCard(
                     heading: "Software Intern",
                     subHeading:
                         "- Developed REST API using JIRA platform to track issues & tickets in the organization to speed up workflow\n- Built API with Flask in Python",
                     organization: "Labra.io",
-                  ),
-                  ItemCard(
-                    heading: "Senior Bot Developer",
-                    subHeading:
-                        "- Developed STEMMie bot to manage organization Discord server\n- Implemented features like task management, on/off boarding members, reminders, attendance, etc.\n- Used Python and the Discord API",
-                    organization: "STEMist Education",
                   ),
                   ItemCard(
                     heading: "Head of Technology for EHR",
@@ -188,10 +194,10 @@ class _OrganizationsState extends State<Organizations> {
                     organization: "University of Illinois Urbana-Champaign",
                   ),
                   ItemCard(
-                    heading: "President of the Math Club",
+                    heading: "Senior Bot Developer",
                     subHeading:
-                        "- Led club of 10 members through weekly-problem solving sessions on advanced math concepts\n- Hosted annual quiz competitions and published a biannual school math magazine\n- Organized annual Pi Day events (quiz, treasure hunt, integration bee) for a community of 600 high school students",
-                    organization: "Greenwood High International School",
+                        "- Developed STEMMie bot to manage organization Discord server\n- Implemented features like task management, on/off boarding members, reminders, attendance, etc.\n- Used Python and the Discord API",
+                    organization: "STEMist Education",
                   ),
                   ItemCard(
                     heading: "Head of Technology for IGNITE 2023",
@@ -203,6 +209,12 @@ class _OrganizationsState extends State<Organizations> {
                     heading: "Undersecretary General of Technology for GWHMUN 2023",
                     subHeading:
                         "- Built the website for GWHMUN 2023, the largest inter-school MUN in Bangalore\n- Led a team of 4 to develop the website\n- Coordinated with school departments and organizing committee to get specific requirements",
+                    organization: "Greenwood High International School",
+                  ),
+                  ItemCard(
+                    heading: "President of the Math Club",
+                    subHeading:
+                        "- Led club of 10 members through weekly-problem solving sessions on advanced math concepts\n- Hosted annual quiz competitions and published a biannual school math magazine\n- Organized annual Pi Day events (quiz, treasure hunt, integration bee) for a community of 600 high school students",
                     organization: "Greenwood High International School",
                   ),
                   ItemCard(
