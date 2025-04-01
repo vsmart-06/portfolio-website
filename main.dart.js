@@ -66004,7 +66004,7 @@ A.me.prototype={
 ag(){var s=4294439152
 return new A.KJ(A.age().$0().d,A.azM().$0().d,A.agd().$0().d,A.c([20,20],t.n),A.V(s),A.c([A.V(s),A.V(4284474343),A.V(4279089599),A.V(4278215828),A.V(4278203732),A.V(4278524195)],t.O))}}
 A.KJ.prototype={
-N(a4){var s,r,q,p,o,n,m,l,k,j,i,h=null,g='print("Hi guys!")',f="|",e='System.out.println("Hi guys!");',d='print("Hi guys!");',c='cout << "Hi guys!" << endl;',b="My name is Srivishnu Vusirikala, and I am a freshman studying Computer Science at the University of Illinois Urbana-Champaign. I enjoy solving challenging problems in fields such as mathematics and computer science. I am also an avid lover of chess and sports such as cricket, basketball, and hockey. Buckle your seatbelts, as you get ready to navigate this tapestry that is my life!",a="https://i.imgur.com/nZuxMBB.jpeg",a0=t.w,a1=t.u6,a2=t.F,a3=this.x
+N(a4){var s,r,q,p,o,n,m,l,k,j,i,h=null,g='print("Hi guys!")',f="|",e='System.out.println("Hi guys!");',d='print("Hi guys!");',c='cout << "Hi guys!" << endl;',b="My name is Srivishnu Vusirikala, and I am a sophomore studying Computer Science at the University of Illinois Urbana-Champaign. I enjoy solving challenging problems in fields such as mathematics and computer science. I am also an avid lover of chess and sports such as cricket, basketball, and hockey. Buckle your seatbelts, as you get ready to navigate this tapestry that is my life!",a="https://i.imgur.com/nZuxMBB.jpeg",a0=t.w,a1=t.u6,a2=t.F,a3=this.x
 if(A.aN(a4,h,a0).w.gf0(0)===B.bh){s=a3[5]
 r=A.aN(a4,h,a0).w
 q=a3[5]
