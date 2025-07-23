@@ -29,6 +29,14 @@ class _HomeState extends State<Home> {
   ];
   bool animation = false;
 
+  List<String> typerTexts = [
+    'print("Hi guys!")',
+    'System.out.println("Hi guys!")',
+    'print("Hi guys!");',
+    'cout << "Hi guys!" << endl;',
+    'console.log("Hi guys!");'
+  ];
+
   void hoverAnimation(var event, bool hover) {
     if (hover && !animation) {
       setState(() {
@@ -78,59 +86,25 @@ class _HomeState extends State<Home> {
                                       padding: const EdgeInsets.fromLTRB(
                                           0, 30, 0, 50),
                                       child: AnimatedTextKit(
-                                        repeatForever: true,
-                                        pause: Duration(seconds: 3),
-                                        animatedTexts: [
-                                          TypewriterAnimatedText(
-                                            "print(\"Hi guys!\")",
-                                            cursor: "|",
-                                            speed: Duration(milliseconds: 100),
-                                            textStyle: TextStyle(
-                                                fontFamily:
-                                                    GoogleFonts.sourceCodePro()
-                                                        .fontFamily,
-                                                fontSize: 40,
-                                                fontWeight: FontWeight.bold,
-                                                color: theme[1]),
-                                          ),
-                                          TypewriterAnimatedText(
-                                            "System.out.println(\"Hi guys!\");",
-                                            speed: Duration(milliseconds: 100),
-                                            cursor: "|",
-                                            textStyle: TextStyle(
-                                                fontFamily:
-                                                    GoogleFonts.sourceCodePro()
-                                                        .fontFamily,
-                                                fontSize: 40,
-                                                fontWeight: FontWeight.bold,
-                                                color: theme[1]),
-                                          ),
-                                          TypewriterAnimatedText(
-                                            "print(\"Hi guys!\");",
-                                            speed: Duration(milliseconds: 100),
-                                            cursor: "|",
-                                            textStyle: TextStyle(
-                                                fontFamily:
-                                                    GoogleFonts.sourceCodePro()
-                                                        .fontFamily,
-                                                fontSize: 40,
-                                                fontWeight: FontWeight.bold,
-                                                color: theme[1]),
-                                          ),
-                                          TypewriterAnimatedText(
-                                            "cout << \"Hi guys!\" << endl;",
-                                            speed: Duration(milliseconds: 100),
-                                            cursor: "|",
-                                            textStyle: TextStyle(
-                                                fontFamily:
-                                                    GoogleFonts.sourceCodePro()
-                                                        .fontFamily,
-                                                fontSize: 40,
-                                                fontWeight: FontWeight.bold,
-                                                color: theme[1]),
-                                          ),
-                                        ],
-                                      )),
+                                          repeatForever: true,
+                                          pause: Duration(seconds: 3),
+                                          animatedTexts: typerTexts
+                                              .map(
+                                                  (e) => TypewriterAnimatedText(
+                                                        e,
+                                                        cursor: "|",
+                                                        speed: Duration(
+                                                            milliseconds: 100),
+                                                        textStyle: TextStyle(
+                                                            fontFamily: GoogleFonts
+                                                                    .sourceCodePro()
+                                                                .fontFamily,
+                                                            fontSize: 40,
+                                                            fontWeight:
+                                                                FontWeight.bold,
+                                                            color: theme[1]),
+                                                      ))
+                                              .toList())),
                                   SizedBox(
                                     width:
                                         MediaQuery.of(context).size.width * 0.5,
@@ -155,8 +129,8 @@ class _HomeState extends State<Home> {
                                   child: Image(
                                     image: NetworkImage(
                                         "https://i.imgur.com/nZuxMBB.jpeg"),
-                                    width: MediaQuery.of(context).size.width *
-                                        0.2,
+                                    width:
+                                        MediaQuery.of(context).size.width * 0.2,
                                   ),
                                 ),
                               ),
@@ -190,55 +164,22 @@ class _HomeState extends State<Home> {
                       Padding(
                           padding: const EdgeInsets.fromLTRB(0, 0, 0, 15),
                           child: AnimatedTextKit(
-                            repeatForever: true,
-                            pause: Duration(seconds: 3),
-                            animatedTexts: [
-                              TypewriterAnimatedText(
-                                "print(\"Hi guys!\")",
-                                cursor: "|",
-                                speed: Duration(milliseconds: 100),
-                                textStyle: TextStyle(
-                                    fontFamily:
-                                        GoogleFonts.sourceCodePro().fontFamily,
-                                    fontSize: 30,
-                                    fontWeight: FontWeight.bold,
-                                    color: theme[1]),
-                              ),
-                              TypewriterAnimatedText(
-                                "System.out.println(\"Hi guys!\");",
-                                speed: Duration(milliseconds: 100),
-                                cursor: "|",
-                                textStyle: TextStyle(
-                                    fontFamily:
-                                        GoogleFonts.sourceCodePro().fontFamily,
-                                    fontSize: 30,
-                                    fontWeight: FontWeight.bold,
-                                    color: theme[1]),
-                              ),
-                              TypewriterAnimatedText(
-                                "print(\"Hi guys!\");",
-                                speed: Duration(milliseconds: 100),
-                                cursor: "|",
-                                textStyle: TextStyle(
-                                    fontFamily:
-                                        GoogleFonts.sourceCodePro().fontFamily,
-                                    fontSize: 30,
-                                    fontWeight: FontWeight.bold,
-                                    color: theme[1]),
-                              ),
-                              TypewriterAnimatedText(
-                                "cout << \"Hi guys!\" << endl;",
-                                speed: Duration(milliseconds: 100),
-                                cursor: "|",
-                                textStyle: TextStyle(
-                                    fontFamily:
-                                        GoogleFonts.sourceCodePro().fontFamily,
-                                    fontSize: 30,
-                                    fontWeight: FontWeight.bold,
-                                    color: theme[1]),
-                              ),
-                            ],
-                          )),
+                              repeatForever: true,
+                              pause: Duration(seconds: 3),
+                              animatedTexts: typerTexts
+                                  .map((e) => TypewriterAnimatedText(
+                                        e,
+                                        cursor: "|",
+                                        speed: Duration(milliseconds: 100),
+                                        textStyle: TextStyle(
+                                            fontFamily:
+                                                GoogleFonts.sourceCodePro()
+                                                    .fontFamily,
+                                            fontSize: 30,
+                                            fontWeight: FontWeight.bold,
+                                            color: theme[1]),
+                                      ))
+                                  .toList())),
                       Text(
                           "My name is Srivishnu Vusirikala, and I am a sophomore studying Computer Science at the University of Illinois Urbana-Champaign. I enjoy solving challenging problems in fields such as mathematics and computer science. I am also an avid lover of chess and sports such as cricket, basketball, and hockey. Buckle your seatbelts, as you get ready to navigate this tapestry that is my life!",
                           style: TextStyle(
