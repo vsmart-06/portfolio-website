@@ -31,7 +31,7 @@ class _HomeState extends State<Home> {
 
   List<String> typerTexts = [
     'print("Hi guys!")',
-    'System.out.println("Hi guys!")',
+    'System.out.println("Hi guys!");',
     'print("Hi guys!");',
     'cout << "Hi guys!" << endl;',
     'console.log("Hi guys!");'
