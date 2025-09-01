@@ -45,16 +45,16 @@ class _AchievementsState extends State<Achievements> {
                         children: [
                           ItemCard(
                               heading: "Intuit Scholarship Program Winner",
-                              subHeading:
+                              subheading:
                                   "Academic scholarship awarded to top 10% applicants globally.\nReceived \$10000/yr for 4 years."),
                           ItemCard(
                             heading: "Greenwood High Merit Scholarship",
-                            subHeading:
+                            subheading:
                                 "Awarded \$5000 for achieving 9/9 A*s in the 10th grade IGCSE board exams.",
                           ),
                           ItemCard(
                               heading: "National Merit Scholarship Finalist",
-                              subHeading:
+                              subheading:
                                   "Top 15000 out of 1.5M PSAT/NMSQT candidates globally."),
                         ],
                       ),
@@ -65,18 +65,18 @@ class _AchievementsState extends State<Achievements> {
                             ItemCard(
                               heading:
                                   "American Invitational Mathematics Examination (AIME) Qualifier",
-                              subHeading:
+                              subheading:
                                   "Qualified for the AIME due to superior performance in the American Mathematics Competition (AMC) (top 5% globally).",
                             ),
                             ItemCard(
                                 heading:
                                     "Indian National Olympiad in Informatics (INOI) Qualifier",
-                                subHeading:
+                                subheading:
                                     "Qualified for the INOI by achieving the required cutoff marks in the Zonal Computing Olympiad (ZCO) (top 25%)."),
                             ItemCard(
                                 heading:
                                     "Indian Olympiad Qualifier in Mathematics (IOQM)",
-                                subHeading:
+                                subheading:
                                     "Awarded a merit certificate for achieving the required cutoff score."),
                           ]),
                       Row(
@@ -86,12 +86,12 @@ class _AchievementsState extends State<Achievements> {
                             ItemCard(
                               heading:
                                   "7th Karnataka State School Chess Team Championship",
-                              subHeading:
+                              subheading:
                                   "Captained the school team to 3rd place in the U-18 category.",
                             ),
                             ItemCard(
                               heading: "Wissen School Quiz Competition 2023",
-                              subHeading:
+                              subheading:
                                   "Placed in the top 5 out of 350+ school teams from across India.",
                             ),
                           ]),
@@ -116,42 +116,42 @@ class _AchievementsState extends State<Achievements> {
                 child: Column(children: [
                   ItemCard(
                       heading: "Intuit Scholarship Program Winner",
-                      subHeading:
+                      subheading:
                           "Academic scholarship awarded to top 10% applicants globally.\nReceived \$10000/yr for 4 years."),
                   ItemCard(
                     heading: "Greenwood High Merit Scholarship",
-                    subHeading:
+                    subheading:
                         "Awarded \$5000 for achieving 9/9 A*s in the 10th grade IGCSE board exams.",
                   ),
                   ItemCard(
                       heading: "National Merit Scholarship Finalist",
-                      subHeading:
+                      subheading:
                           "Top 15000 out of 1.5M PSAT/NMSQT candidates globally."),
                   ItemCard(
                     heading:
                         "American Invitational Mathematics Examination (AIME) Qualifier",
-                    subHeading:
+                    subheading:
                         "Qualified for the AIME due to superior performance in the American Mathematics Competition (AMC) (top 5% globally).",
                   ),
                   ItemCard(
                       heading:
                           "Indian National Olympiad in Informatics (INOI) Qualifier",
-                      subHeading:
+                      subheading:
                           "Qualified for the INOI by achieving the required cutoff marks in the Zonal Computing Olympiad (ZCO) (top 25%)."),
                   ItemCard(
                       heading:
                           "Indian Olympiad Qualifier in Mathematics (IOQM)",
-                      subHeading:
+                      subheading:
                           "Awarded a merit certificate for achieving the required cutoff score."),
                   ItemCard(
                     heading:
                         "7th Karnataka State School Chess Team Championship",
-                    subHeading:
+                    subheading:
                         "Captained the school team to 3rd place in the U-18 category.",
                   ),
                   ItemCard(
                     heading: "Wissen School Quiz Competition 2023",
-                    subHeading:
+                    subheading:
                         "Placed in the top 5 out of 350+ school teams from across India.",
                   ),
                 ]),

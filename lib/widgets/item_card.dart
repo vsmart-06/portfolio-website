@@ -5,10 +5,10 @@ import "package:google_fonts/google_fonts.dart";
 
 class ItemCard extends StatefulWidget {
   String heading;
-  String subHeading;
+  String subheading;
   String? organization;
   ItemCard(
-      {key, required this.heading, required this.subHeading, this.organization})
+      {key, required this.heading, required this.subheading, this.organization})
       : super(key: key);
 
   @override
@@ -66,8 +66,8 @@ class _ItemCardState extends State<ItemCard>
                   width: MediaQuery.of(context).size.width * 0.25,
                   constraints: BoxConstraints(
                     minHeight: widget.organization == null
-                      ? MediaQuery.of(context).size.height * 0.4
-                      : MediaQuery.of(context).size.height * 0.6,
+                        ? MediaQuery.of(context).size.height * 0.4
+                        : MediaQuery.of(context).size.height * 0.6,
                   ),
                   child: Padding(
                       padding: const EdgeInsets.all(10.0),
@@ -80,7 +80,9 @@ class _ItemCardState extends State<ItemCard>
                             padding: const EdgeInsets.fromLTRB(25, 20, 25, 10),
                             child: Column(
                               crossAxisAlignment: CrossAxisAlignment.center,
-                              mainAxisAlignment: (widget.organization != null) ? MainAxisAlignment.start : MainAxisAlignment.center,
+                              mainAxisAlignment: (widget.organization != null)
+                                  ? MainAxisAlignment.start
+                                  : MainAxisAlignment.center,
                               children: [
                                 Text(
                                   widget.heading,
@@ -110,7 +112,7 @@ class _ItemCardState extends State<ItemCard>
                                 Padding(
                                   padding: const EdgeInsets.only(top: 10),
                                   child: Text(
-                                    widget.subHeading,
+                                    widget.subheading,
                                     style: TextStyle(
                                         fontSize: 16,
                                         color: theme[0],
@@ -172,7 +174,7 @@ class _ItemCardState extends State<ItemCard>
                           Padding(
                             padding: const EdgeInsets.only(top: 10),
                             child: Text(
-                              widget.subHeading,
+                              widget.subheading,
                               style: TextStyle(
                                   fontSize: 16,
                                   color: theme[0],
