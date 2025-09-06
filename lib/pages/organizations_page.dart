@@ -30,12 +30,6 @@ class _OrganizationsState extends State<Organizations> {
       "organization": "University of Illinois Urbana-Champaign",
     },
     {
-      "heading": "Course Assistant for CS 128",
-      "subheading":
-          "- Led weekly office hours and discussion sessions, supporting 1,000+ students in mastering C++ programming\n- Validated and stress-tested machine problems to ensure fair, accurate, and scalable assessment for 1,000+ students",
-      "organization": "University of Illinois Urbana-Champaign",
-    },
-    {
       "heading": "Mobile App Developer",
       "subheading":
           "- Built Flutter mobile app for Illini Dads Association, used by 40,000+ parents to navigate campus during Dads Weekend\n- Added scheduling and merchandise features to the Dads Weekend app, streamlining logistics and user experience\n- Integrated Google Maps and Firebase for real-time navigation and push notifications, enhancing parent experience",
@@ -46,6 +40,18 @@ class _OrganizationsState extends State<Organizations> {
       "subheading":
           "- Built a Python-based reporting suite that automated analysis, reducing manual effort and making insights more accessible\n- Migrated backend to Laravel, improving performance and scalability and introduced new features for franchise operations",
       "organization": "Bricks 4 Kidz"
+    },
+    {
+      "heading": "Course Assistant for CS 233",
+      "subheading":
+          "- Led in-person discussion sections to guide students through challenging concepts and assessments in computer architecture\n- Held weekly office hours to provide individualized support and deepen student understanding of course material",
+      "organization": "University of Illinois Urbana-Champaign",
+    },
+    {
+      "heading": "Course Assistant for CS 128",
+      "subheading":
+          "- Led weekly office hours and discussion sessions, supporting 1,000+ students in mastering C++ programming\n- Validated and stress-tested machine problems to ensure fair, accurate, and scalable assessment for 1,000+ students",
+      "organization": "University of Illinois Urbana-Champaign",
     },
     {
       "heading": "Research Assistant at RoboTouch Lab",
